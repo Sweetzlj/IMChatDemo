@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/MainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/em_main_bottom_item_bg"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rb_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/em_main_bottom_item_bg"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/em_tab_chat_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="会话"
+                android:textColor="@color/em_main_botton_text_color"
+                android:textSize="12sp" />
+            <TextView
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/tv_red"
+                android:background="@drawable/shape_red"
+                android:text="1"
+                android:textColor="#fff"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rb_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/em_main_bottom_item_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/em_tab_contact_list_bg"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="通讯录"
+            android:textColor="@color/em_main_botton_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/rb_set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/em_main_bottom_item_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/em_tab_setting_bg"
+            android:gravity="center"
+            android:padding="11dp"
+            android:text="设置"
+            android:textColor="@color/em_main_botton_text_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

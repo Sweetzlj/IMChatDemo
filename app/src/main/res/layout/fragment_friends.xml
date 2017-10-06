@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.route.test.chatdemo.fragment.FriendsFragment">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@color/top_bar_normal_bg">
+          <TextView
+              android:textColor="@color/write"
+              android:id="@+id/tv_content"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="通讯录"
+              android:textSize="20dp"
+              android:layout_centerInParent="true"/>
+          <ImageView
+              android:id="@+id/em_add"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:src="@drawable/em_add"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="20dp"/>
+      </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="申请与通知"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_shenqing"
+        android:textColor="#fff"
+        android:background="@color/bluesky"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"/>
+
+</LinearLayout>
